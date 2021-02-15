@@ -1,12 +1,10 @@
-HelloWorld
-==========
+This is a CI/CD pipelines wherein I'm deploying mongo-db and mongo-express deployment in Kubernetes cluster.
 
-A simple Java application that can be compiled into a .jar file using Maven.
 
-To build
---------
-    mvn clean package
 
-To run
-------
-    java -cp target/helloworld-1.0.jar com.coveros.demo.helloworld.HelloWorld
+I have written 4 yaml files to deploy -
+
+1.) Deployed secrets - mongo-secrets.yaml
+2.) Deployed mongo-DB deployment and service  - mongo.yaml
+3.) Deployed the Mongo-express ConfigMap yaml file - mongo-configmap.yaml
+4.) Deployment and Service for the mongo-express  - mongo-express.yaml
