@@ -3,7 +3,7 @@
 node{
     
     stage("clone code from git hub"){
-        git credentialsId: 'GIT_CREDENTIALS', url: 'https://github.com/mhali922/helloworld.git'
+        git credentialsId: 'GIT_CREDENTIALS', url: 'https://github.com/mhali922/Mongo-express-MongoDB-in-K8.git'
     }
     
     
