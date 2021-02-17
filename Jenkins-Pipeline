@@ -1,0 +1,18 @@
+# This is my pipeline in which yaml files have been passed and Mongo-Express and Mongo-DB Deployment/Services/Secrets/ConfigMap have been created.
+
+node{
+    
+    stage("clone code from git hub"){
+        git credentialsId: 'GIT_CREDENTIALS', url: 'https://github.com/mhali922/helloworld.git'
+    }
+    
+    
+      stage("Deploy to k8 cluster"){
+        sh 'kubectl apply -f mongo-secrets.yaml'
+        sh 'kubectl apply -f mongo.yaml'
+        sh 'kubectl apply -f mongo-configmap.yaml'
+        sh 'kubectl apply -f mongo-express.yaml'
+        
+    }
+        
+}
