@@ -11,3 +11,5 @@ I have written 4 yaml files to deploy -
 3.) Deployed the Mongo-express ConfigMap yaml file - mongo-configmap.yaml
 
 4.) Deployment and Service for the mongo-express  - mongo-express.yaml
+
+I need to ingress controller in order to remove Node-port.
